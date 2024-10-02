@@ -6,7 +6,7 @@ import org.springframework.stereotype.Component;
 public class Dev {
 
     @Autowired
-    private Laptop laptop;
+    private Computer computer;
 
     //3 types of injections
 
@@ -27,7 +27,7 @@ public class Dev {
     //}
 
     public void build(){
-        laptop.compile();
+        computer.compile();
         System.out.println("Spring Boot Practise");
     }
 }
