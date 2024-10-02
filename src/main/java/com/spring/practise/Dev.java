@@ -6,7 +6,7 @@ import org.springframework.stereotype.Component;
 public class Dev {
 
     @Autowired
-    private Machine machine;
+    private Laptop laptop;
 
     //3 types of injections
 
@@ -15,7 +15,7 @@ public class Dev {
     //private Machine machine;
 
     //2nd - constructor injection
-    // no @Autowired needed
+    //not necessary but can be used @Autowired, constructor uses it by default
     //public Dev(Machine machine){
     //      this.machine = machine;
     //}
@@ -27,7 +27,7 @@ public class Dev {
     //}
 
     public void build(){
-        machine.compile();
+        laptop.compile();
         System.out.println("Spring Boot Practise");
     }
 }
